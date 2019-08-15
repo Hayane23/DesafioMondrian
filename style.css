@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue;
+}
+
+.quadro{
+    display: grid;
+    grid-template-areas: 'header header aside'
+                         'nav section aside'
+                         'nav section aside'
+                         'nav footer aside';
+    width: 80%;
+    height: 80%;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: blue; 
+}
+
+nav{
+    grid-area: nav;
+    background-color: black;
+}
+
+section{
+    background-color: white;
+    grid-area: section;
+}
+
+aside{
+    background-color: blueviolet;
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
