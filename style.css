@@ -49,32 +49,45 @@ section{
 }
 
 aside{
-    background-color: blueviolet;
+    background-color: black;
     grid-area: aside;
+    padding-right: 10px;
 }
 
-.amarelo{
-    background-color: yellow;
+aside>div:first-child{
+    background-color: #f5d417;
+    margin-bottom: 10px;
     height: 10vh;
 }
 
-.yellow{
-    background-color: yellow;
-    margin-top: 10px;
+aside>div:nth-child(2){
+    background-color: #f5d417;
+    margin-bottom: 10px;
     height: 24vh;
 }
 
-.quadrado{
-    margin-top: 10px;
-    background-color: white;
+aside>div:nth-child(3){
     height: 23vh;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.retangular{
+aside>div:nth-child(3)>div{
+    width: 47.5%;
+    background-color: white;
+}
+
+aside>div:nth-child(4){
     height: 10vh;
+    margin-bottom: 10px;
     background-color: aliceblue;
+}
+
+aside>div:nth-child(5){
+    height: 19vh;
+    margin-bottom: 10px;
+    background-color: #0f3870;
 }
 
 footer{
