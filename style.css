@@ -1,10 +1,6 @@
 body{
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: cadetblue;
 }
 
 .quadro{
@@ -13,16 +9,22 @@ body{
                          'nav section aside'
                          'nav section aside'
                          'nav footer aside';
-    width: 80%;
-    height: 80%;
+    grid-gap: 10px;
+    grid-template-rows: 10vh 45vh 20vh;
+    grid-template-columns: 10vw 30vw 20vw;
 }
 
 header{
     grid-area: header;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: blue; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div:first-child{
+    background-color: aliceblue;
+    height: 100%;
+    width: 19vw;
 }
 
 nav{
@@ -31,8 +33,19 @@ nav{
 }
 
 section{
-    background-color: white;
+    background-color: pink;
     grid-area: section;
+}
+
+.red{
+    height: 40vh;
+    background-color: red;
+}
+
+.div-quadrada{
+    height: 20vh;
+    background-color: aquamarine;
+    /* display: flex; */
 }
 
 aside{
@@ -40,6 +53,31 @@ aside{
     grid-area: aside;
 }
 
+.amarelo{
+    background-color: yellow;
+    height: 10vh;
+}
+
+.yellow{
+    background-color: yellow;
+    margin-top: 10px;
+    height: 24vh;
+}
+
+.quadrado{
+    margin-top: 10px;
+    background-color: white;
+    height: 23vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.retangular{
+    height: 10vh;
+    background-color: aliceblue;
+}
+
 footer{
     grid-area: footer;
+    background-color: green;
 }
