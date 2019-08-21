@@ -9,7 +9,6 @@ body{
                          'nav section aside'
                          'nav section aside'
                          'nav footer aside';
-    grid-gap: 10px;
     grid-template-rows: 10vh 45vh 20vh;
     grid-template-columns: 10vw 30vw 20vw;
 }
@@ -17,19 +16,34 @@ body{
 header{
     grid-area: header;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: black;
 }
 
 header div:first-child{
-    background-color: aliceblue;
-    height: 100%;
+    background-color: #c5d2da;
+    margin-right: 10px;
+    height: 90%;
+    width: 21vw;
+}
+
+header div:nth-child(2){
+    background-color: #dcddd8;
+    margin-right: 10px;
+    height: 90%;
     width: 19vw;
 }
 
 nav{
+    padding-right: 10px;
     grid-area: nav;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav div{
+    background-color: #d8dfe7;
 }
 
 section{
@@ -75,13 +89,13 @@ aside>div:nth-child(3){
 
 aside>div:nth-child(3)>div{
     width: 47.5%;
-    background-color: white;
+    background-color: #dcddd8;
 }
 
 aside>div:nth-child(4){
     height: 10vh;
     margin-bottom: 10px;
-    background-color: aliceblue;
+    background-color: #dcddd8;
 }
 
 aside>div:nth-child(5){
