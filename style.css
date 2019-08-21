@@ -10,7 +10,7 @@ body{
                          'nav section aside'
                          'nav footer aside';
     grid-template-rows: 10vh 45vh 20vh;
-    grid-template-columns: 10vw 30vw 20vw;
+    grid-template-columns: 8vw 30vw 20vw;
 }
 
 header{
@@ -20,17 +20,17 @@ header{
 }
 
 header div:first-child{
-    background-color: #c5d2da;
+    background-color: #d0dae4;
     margin-right: 10px;
     height: 90%;
-    width: 21vw;
+    width: 16vw;
 }
 
 header div:nth-child(2){
-    background-color: #dcddd8;
+    background-color: #dededc;
     margin-right: 10px;
     height: 90%;
-    width: 19vw;
+    width: 20vw;
 }
 
 nav{
@@ -42,8 +42,19 @@ nav{
     justify-content: space-between;
 }
 
-nav div{
-    background-color: #d8dfe7;
+nav div:first-child{
+    background-color: #efeeea;
+    height: 25vh;
+}
+
+nav div:nth-child(2){
+    background-color: #d6dde5;
+    height: 34vh;
+}
+
+nav div:nth-child(3){
+    background-color: #f2be18;
+    height: 22vh;
 }
 
 section{
