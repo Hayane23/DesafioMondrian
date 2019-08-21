@@ -9,8 +9,8 @@ body{
                          'nav section aside'
                          'nav section aside'
                          'nav footer aside';
-    grid-template-rows: 10vh 45vh 20vh;
-    grid-template-columns: 8vw 30vw 20vw;
+    grid-template-rows: 10vh 45vh 25vh;
+    grid-template-columns: 8vw 30vw 15vw;
 }
 
 header{
@@ -21,15 +21,13 @@ header{
 
 header div:first-child{
     background-color: #d0dae4;
-    margin-right: 10px;
-    height: 90%;
+    margin: 0 10px 10px 0;
     width: 16vw;
 }
 
 header div:nth-child(2){
     background-color: #dededc;
-    margin-right: 10px;
-    height: 90%;
+    margin: 0 10px 10px 0;
     width: 20vw;
 }
 
@@ -44,7 +42,7 @@ nav{
 
 nav div:first-child{
     background-color: #efeeea;
-    height: 25vh;
+    height: 23vh;
 }
 
 nav div:nth-child(2){
@@ -58,17 +56,33 @@ nav div:nth-child(3){
 }
 
 section{
-    background-color: pink;
     grid-area: section;
+    background-color: black;
+    padding-right: 10px;
+}
+
+section>div:nth-child(2){
+    height: 22vh;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section>div:nth-child(2)>div{
+    width: 50%;
+    display: flex;
+    background-color: yellow;
 }
 
 .red{
-    height: 40vh;
-    background-color: red;
+    height: 45vh;
+    background-color: #da2419;
 }
 
 .div-quadrada{
     height: 20vh;
+    margin-top: 10px;
     background-color: aquamarine;
     /* display: flex; */
 }
@@ -82,7 +96,7 @@ aside{
 aside>div:first-child{
     background-color: #f5d417;
     margin-bottom: 10px;
-    height: 10vh;
+    height: 8.5vh;
 }
 
 aside>div:nth-child(2){
@@ -117,5 +131,18 @@ aside>div:nth-child(5){
 
 footer{
     grid-area: footer;
-    background-color: green;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #d7d7d9;
+}
+
+footer div:first-child{
+    width: 10px;
+    background-color: black;
+}
+
+footer div:nth-child(2){
+    width: 50%;
+    height: 50%;
+    background-color: black;
 }
