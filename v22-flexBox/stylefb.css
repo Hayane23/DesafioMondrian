@@ -9,6 +9,9 @@ body{
   justify-content: center;
   align-items: center;
 }
+.container{
+  width: 415px;
+}
 .flex-box{
   display: flex;
   flex-wrap: wrap;
@@ -34,14 +37,23 @@ body{
 .h-100{
   height: 100%;
 }
+.h-70{
+  height: 70%;
+}
 .h-75{
   height: 75%;
 }
 .h-50{
   height: 50%;
 }
+.h-30{
+  height: 30%;
+}
 .h-25{
   height: 25%;
+}
+.h-10{
+  height: 10%;
 }
 .w-100{
   width: 100%;
@@ -49,11 +61,20 @@ body{
 .w-75{
   width: 75%;
 }
+.w-70{
+  width: 70%;
+}
 .w-50{
   width: 50%;
 }
+.w-30{
+  width: 30%;
+}
 .w-25{
   width: 25%;
+}
+.largura25{
+  width: 25px;
 }
 .border-r{
   border-right: 3px solid black;
@@ -67,7 +88,7 @@ body{
 #first{
   height: 100px;
 }
-#box1{
+.box1{
   width: 145px;
 }
 .box2{
@@ -75,4 +96,7 @@ body{
 }
 .box-3{
   width: 45px;
+}
+.vertical{
+  height: 160px;
 }
